@@ -50,14 +50,11 @@ html(lang='en')
                       span.icon-bar
                       span.icon-bar
 
-            .user-dashboard
-                h1(style='font-family:libraryFont; font-weight:bold') Hello, #{user.username}
-
             .br
             .br
             .br 
   
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;You must eat this many calories today!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesPerDay} </span> <br> calories 
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Remaining  Flight Time: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> 256 </span> <br> days! 
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Status: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="color: green; font-size:100px"> Healthy </span> <br> for the last 7 days!             
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Exercise Goal: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> 100 </span> <br> pushups!
+            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Your calorie count for today: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesForCurrentUser} </span> <br> calories 
+            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Team's calorie count for today: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesForTeam} </span> <br> calories 
+            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Total calories required in inventory for the trip: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesForTeam * 365} </span> <br> calories 
+            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Status: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="color: green; font-size:100px"> Ok </span> <br> rations 

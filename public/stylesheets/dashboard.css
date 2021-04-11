@@ -373,6 +373,10 @@ header {
     color: #D00000;
 }
 
+.navi {
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
 .navi .active a {
     background: #AAAAAA;
     border-left: 5px solid #000000;
