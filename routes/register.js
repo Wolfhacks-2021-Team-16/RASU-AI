@@ -66,7 +66,9 @@ router.post('/', function (req, res) {
                 password: password,
                 email: email,
                 age: age,
-                height: height 
+                height: height,
+                weight: weight,
+                gender: gender
             }; // creates object of new user
             localDrive.collection("users").insertOne(new_user, function (err, result) {
                 if (err) 
