@@ -17,8 +17,7 @@ router.get('/', function (req, res, next) { // checks if user is already logged 
 
         var localDrive = server.db("RASU-DB"); // connects to localDrive database
         queryCommand = {
-            email: req.session.email,
-            password: req.session.password
+            email: req.session.email
         } // prepares the search statement
         localDrive.collection("users").find(queryCommand).toArray(function (err, result) {
             if (err) 
@@ -29,7 +28,6 @@ router.get('/', function (req, res, next) { // checks if user is already logged 
             return res.render('dashboard', {
                 user: result[0]
             })
-
         });
     });
 });

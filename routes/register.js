@@ -13,7 +13,7 @@ express().use(bodyParser.json());
 // code that runs when user tries to open 'register' page
 router.get('/', function (req, res, next) {
     if (req.session.loggedin) 
-        return res.redirect('/home');
+        return res.redirect('/dashboard');
     
     res.render('register', {
         errors: req.flash('error')[0]
@@ -23,7 +23,7 @@ router.get('/', function (req, res, next) {
 // code that runs when user submits register details
 router.post('/', function (req, res) {
     if (req.session.loggedin) 
-        res.redirect('/home');
+        res.redirect('/dashboard');
     
     // get input from user
     var username = req.body.username;
@@ -77,7 +77,7 @@ router.post('/', function (req, res) {
                 req.session.loggedin = true;
                 req.session.username = username;
                 req.session.email = email;
-                return res.redirect('/home');
+                return res.redirect('/dashboard');
             });
         });
     });
