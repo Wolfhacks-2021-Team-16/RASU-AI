@@ -17,16 +17,7 @@ router.get('/', function (req, res, next) { // checks if user is already logged 
     }); // if user entered wrong user/pass then show error msg.
 });
 
-// logout code
-router.get('/logout', function (request, response) {
-    request.session.destroy(function (err) { // distroy session
-        if (err) 
-            throw err;
-        
-        console.log("deleting session");
-        return response.redirect('/'); // send them to home page
-    });
-});
+
 
 // Checks username and password with database
 router.post('/', function (req, res) {
