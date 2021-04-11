@@ -8,14 +8,18 @@ html(lang='en')
   body
     .sidenav
       .login-main-text
-        h2
+        h2(style='font-family:libraryFont;')
           | RASU AI
           br
           |  Authentication Page
         p Login or register from here to access RASU AI.
     .main
       .col-md-6.col-sm-12
-        .login-form
+        br
+        br
+        br
+        img(src='/images/logoclear.png' alt='logoclear' width='479.7' height='141.3')
+        .login-form(style='margin-top: 110px')
           form
             .form-group
               label User Name
@@ -23,5 +27,5 @@ html(lang='en')
             .form-group
               label Password
               input.form-control(type='password' placeholder='Password')
-            button.btn.btn-black(type='submit') Login
+            button.btn.btn-black(type='submit' style='margin-right: 10px') Login
             button.btn.btn-secondary(type='submit') Register

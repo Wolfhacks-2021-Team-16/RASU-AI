@@ -73,3 +73,9 @@ body {
     background-color: #000 !important;
     color: #fff;
 }
+
+@font-face {
+    font-family: libraryFont;
+    src: url("/fonts/library-3-am/libraryfont.otf") format("opentype");
+  }
+  
