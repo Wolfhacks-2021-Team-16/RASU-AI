@@ -14,6 +14,7 @@ var dashboardRouter = require('./routes/dashboard');
 var inventoryRouter = require("./routes/inventory");
 var logoutRouter = require('./routes/logout');
 var healthRouter = require('./routes/healthReport');
+var coldFluRouter = require('./routes/coldFlu')
 
 var app = express();
 
@@ -41,6 +42,7 @@ app.use('/dashboard', dashboardRouter)
 app.use('/inventory', inventoryRouter)
 app.use('/logout', logoutRouter)
 app.use('/healthReport', healthRouter)
+app.use("/coldFlu", coldFluRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
