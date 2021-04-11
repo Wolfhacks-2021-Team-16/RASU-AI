@@ -30,7 +30,7 @@ router.post('/', function (req, res) {
     var email = req.body.email;
     var password = req.body.password;
     var age = req.body.age;
-    var weight = req.body.weird;
+    var weight = req.body.weight;
     var height = req.body.height;
     var gender = req.body.gender;
 
