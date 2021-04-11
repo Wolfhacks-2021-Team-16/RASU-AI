@@ -14,3 +14,5 @@ router.get('/', function (request, response) {
         return res.render('healthReport')
     });
 });
+
+module.exports = router
