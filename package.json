@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Wolfhacks-2021-Team-16/RASU-AI/issues"
   },
-  "homepage": "https://github.com/Wolfhacks-2021-Team-16/RASU-AI#readme"
+  "homepage": "https://github.com/Wolfhacks-2021-Team-16/RASU-AI#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
