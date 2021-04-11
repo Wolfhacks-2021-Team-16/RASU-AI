@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var mymongo = require('mongodb').MongoClient;
 
+// mongo ipaddress
+var mongoUrl = "mongodb://127.0.0.1:27017/";
+
 
 /* Sends the Login Page, and show error 
     if user attemted to login before */
@@ -26,7 +29,7 @@ router.get('/logout', function (request, response) {
 });
 
 // Checks username and password with database
-router.post('/login', function (req, res) {
+router.post('/', function (req, res) {
     var username = req.body.username; // get username and password from the request
     var password = req.body.password;
     mymongo.connect(mongoUrl, function (err, server) { // connects to main server
