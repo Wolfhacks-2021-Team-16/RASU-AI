@@ -6,7 +6,6 @@ html(lang='en')
     script(src='//code.jquery.com/jquery-1.11.1.min.js')
     link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1' crossorigin='anonymous')
     link(rel='stylesheet' href='/stylesheets/dashboard.css')
-
   body.home
     .container-fluid.display-table
       .row.display-table-row
@@ -37,7 +36,7 @@ html(lang='en')
                 a(href='#')
                   i.fa.fa-calendar(aria-hidden='true')
                   span.hidden-xs.hidden-sm Users
-              li
+              li(style='color: 000000')
                 a(href='#')
                   i.fa.fa-cog(aria-hidden='true')
                   span.hidden-xs.hidden-sm Setting
@@ -53,8 +52,12 @@ html(lang='en')
                       span.icon-bar
                       span.icon-bar
                       span.icon-bar
-              
-          .user-dashboard
-            h1 Hello, #{user.username}
 
-   
+            .user-dashboard
+                h1 Hello, #{user.username}
+
+            .br
+            .br
+            .br 
+            
+            .p(style="margin-left: 20px") You must eat this many calories today: 
