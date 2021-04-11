@@ -20,12 +20,12 @@ html(lang='en')
         br
         img(src='/images/logoclear.png' alt='logoclear' width='479.7' height='141.3')
         .login-form(style='margin-top: 110px')
-          form
+          form(action = "/login" method = "POST")
             .form-group
-              label User Name
-              input.form-control(type='text' placeholder='User Name')
+              label User Name:
+              input.form-control(type='text' placeholder='User Name' id="username" name = "username")
             .form-group
-              label Password
-              input.form-control(type='password' placeholder='Password')
-            button.btn.btn-black(type='submit' style='margin-right: 10px') Login
-            button.btn.btn-secondary(type='submit') Register
+              label Password:
+              input.form-control(type='password' placeholder='Password' id="password" name = "password")
+              button.btn.btn-black(type='submit' style='margin-right: 10px') Login
+              button.btn.btn-secondary(type='submit') Register
