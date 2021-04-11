@@ -8,7 +8,7 @@ var mongoUrl = "mongodb://127.0.0.1:27017/";
 
 
 // logout code
-router.get('/logout', function (request, response) {
+router.get('/', function (request, response) {
     request.session.destroy(function (err) { // distroy session
         if (err) 
             throw err;
