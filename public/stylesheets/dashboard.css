@@ -5,7 +5,14 @@
     src: url("/fonts/library-3-am/libraryfont.otf") format("opentype");
   }
 
+.largerCheckbox {
+    width: 20px;
+    height: 20px;
+}
 
+.symptoms{
+    margin-left:20px;
+}
 /*Login Signup Page*/
 a:focus,a:hover,a{
     outline:none;

@@ -53,8 +53,72 @@ html(lang='en')
             .br
             .br
             .br 
-  
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Your calorie count for today: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesForCurrentUser} </span> <br> calories 
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Team's calorie count for today: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesForTeam} </span> <br> calories 
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Total calories required in inventory for the trip: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="font-size:100px"> #{caloriesForTeam * 365} </span> <br> calories 
-            .h3(style='font-family:libraryFont; padding: 8px; text-align:center; border: 2px solid #000000; border-radius: 5px; margin-left: 20px; padding-top: 10px; display:inline-block')&nbsp;Status: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> <span style="color: green; font-size:100px"> Ok </span> <br> rations 
+            form(class="symptoms")
+                input#Fever(type='checkbox' name='Fever' value='Fever' class='largerCheckbox')
+                label(for='Fever')&nbsp;&nbsp; Fever
+                br
+                input#SevereDryCoughing(type='checkbox' name='vehicle2' value='Car' class='largerCheckbox')
+                label(for='vehicle2')&nbsp;&nbsp; Severe Dry Coughing
+                br
+                input#Sneezing(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Sneezing
+                br
+                input#SoreThroat(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Sore Throat
+                br
+                input#MildHeadaches(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Mild Headaches
+                br
+                input#RunnyorStuffyNose(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Runny Nose
+                br
+                input#WetCough(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Wet Cough
+                br
+                input#Nausea(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Nausea
+                br
+                input#Constipation(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Constipation
+                br
+                input#ChestPain(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Chest Pain
+                br
+                input#Heartburn(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Heart Burn
+                br
+                input#AbdominalPain(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Abdominal Pain
+                br
+                input#BloodyVomit(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Bloody Vomit
+                br
+                input#WeakUrineStream(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Weak Urine Stream
+                br
+                input#VisibleGenitalInfection(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Visible Genital Infection
+                br
+                input#BurningWhileUrinating(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  BurningWhileUrinating
+                br
+                input#BloodyUrine(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  BloodyUrine
+                br
+                input#Nervousness(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Nervousness
+                br                           
+                input#RapidHeartRate(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  RapidHeartRate
+                br                           
+                input#Insomnia(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp;  Insomnia
+                br                           
+                input#PanicAttacks(type='checkbox' name='vehicle3' value='Boat' class='largerCheckbox')
+                label(for='vehicle3')&nbsp;&nbsp; Panic Attacks
+                br  
+                br
+                a(href="/coldFlu")                       
+                    button.btn.btn-black(type='button' style='margin-right: 10px; border: solid; border-size: 1px; font-family:libraryFont') Submit
+                br
+                br
