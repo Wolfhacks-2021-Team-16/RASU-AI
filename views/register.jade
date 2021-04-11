@@ -20,7 +20,7 @@ html(lang='en')
         br
         img(src='/images/logoclear.png' alt='logoclear' width='479.7' height='141.3')
         .login-form(style='margin-top: 70px')
-          form(method = "POST")
+          form(action="POST")
             .form-group
               label Username:
               input.form-control(type='text' placeholder='Username' id='username' name='username')
@@ -41,7 +41,7 @@ html(lang='en')
               input.form-control(type='text' placeholder='Height' id='height' name='height')
             .form-group
               label Gender:
-              input.form-control(type='text' placeholder='Gender' style='margin-bottom: 30px' id='gender' name = "gender")
-            button.btn.btn-black(type='submit') Register
+              input.form-control(type='text' placeholder='Gender' style='margin-bottom: 30px' id='gender')
+            button.btn.btn-black(type='submit' style='margin-left: 15px') Register
             <br>
             <br>
