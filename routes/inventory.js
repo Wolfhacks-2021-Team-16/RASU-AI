@@ -41,7 +41,7 @@ router.get('/', function (req, res, next) { // checks if user is already logged 
                 return res.render("inventory", {
                     caloriesForCurrentUser: caloriesPerDayCurrentUser,
                     caloriesForTeam: totalCaloriesForTeam,
-                    allTeamMembers = result
+                    allTeamMembers: result
                 })
             })
         });
