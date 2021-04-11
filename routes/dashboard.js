@@ -43,7 +43,7 @@ function getCalories(user) {
         bmr = (10 * user.weight) + (6.25 * user.height) - (5 * user.age) + 5
     }
 
-    return Math.floor(bmr * 1.55)
+    return Math.floor(bmr * 1.70)
 }
 
 module.exports = router
