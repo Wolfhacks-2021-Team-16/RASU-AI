@@ -10,7 +10,7 @@ var mongoUrl = "mongodb://127.0.0.1:27017/";
     if user attemted to login before */
 router.get('/', function (req, res, next) { // checks if user is already logged in. if they are, then send them home!
     if (req.session.loggedin) 
-        return res.redirect("/home");
+        return res.redirect("/dashboard");
     
     return res.render('login', {
         loginFailed: req.flash('error')[0]
@@ -52,7 +52,7 @@ router.post('/', function (req, res) {
                 req.session.email = result[0].email;
                 console.log(req.session.username);
                 server.close();
-                return res.redirect('/home');
+                return res.redirect('/dashboard');
             } else { /*if username or password is incorrect,
         send user back to the login page with a error message*/
                 req.flash('error', true)
