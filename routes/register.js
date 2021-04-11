@@ -57,7 +57,7 @@ router.post('/', function (req, res) {
             // if email is used, tell the user to login with that email
             if (result != 0) {
                 req.flash('error', 'emailInUse');
-                return res.redirect('/session/register');
+                return res.redirect('/register');
             }
             /*now, since everything is checked, 
       add the user into the database and log them in*/
