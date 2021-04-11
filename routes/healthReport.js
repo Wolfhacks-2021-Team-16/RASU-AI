@@ -8,11 +8,11 @@ var mongoUrl = "mongodb://127.0.0.1:27017/";
 
 
 router.get('/', function (request, response) {
-    request.session.destroy(function (err) { // distroy session
-        if (!req.session.loggedin) 
-            return res.redirect("/login");
-        return res.render('healthReport')
-    });
+    if (!request.session.loggedin) 
+        return response.redirect("/login");
+    return response.render('healthReport')
 });
+
+router.get('/')
 
 module.exports = router
