@@ -37,13 +37,13 @@ router.post('/', function (req, res) {
     // check if form is completed. if not, send user back to complete form
     if (!username || !password || !email || !age || !weight || !height || !gender) {
         req.flash('error', 'incompleteForm');
-        return res.redirect('/session/register');
+        return res.redirect('/register');
     }
     // check if email is valid. If not, then send user back to register
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    /*if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
         req.flash('error', 'invalidEmail');
-        return res.redirect('/session/register');
-    }
+        return res.redirect('/register');
+    }*/
     // now check if email is already being used
     mymongo.connect(mongoUrl, function (err, server) {
         if (err) 
