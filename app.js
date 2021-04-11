@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
+var flash = require('connect-flash');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -15,6 +16,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(session({secret: 'secretcookiespassword', resave: false, name: 'main', saveUninitialized: false}));
+
+// setups flash. used as temperory storage.
+app.use(flash());
 
 
 app.use(logger('dev'));
