@@ -18,15 +18,16 @@ html(lang='en')
         br
         br
         br
-        img(src='/images/logoclear.png' alt='logoclear' width='479.7' height='141.3')
-        .login-form(style='margin-top: 110px')
-          form(action = "/login" method = "POST")
+        img(src='/images/logoclear.png' alt='logoclear' width='479.7' height='141.3' style='margin-left: 50px')
+        .login-form(style='margin-top: 70px')
+          form(action='/login' method='POST')
             .form-group
               label User Name:
-              input.form-control(type='text' placeholder='User Name' id="username" name = "username")
+              input#username.form-control(type='text' placeholder='User Name' name='username')
             .form-group
               label Password:
-              input.form-control(type='password' placeholder='Password' id="password" name = "password")
-              <br>
+              input#password.form-control(type='password' placeholder='Password' name='password')
+              br
               button.btn.btn-black(type='submit' style='margin-right: 10px;font-family:libraryFont') Login
-              button.btn.btn-secondary(type='submit' style='font-family:libraryFont') Register
+              a(href="/register")
+                button.btn.btn-secondary(type='button' style='font-family:libraryFont') Register
