@@ -1,7 +1,11 @@
 # RASU-AI
-RASU is a project worked upon by Team 16 for the Chinguacousy 2021 Wolfhacks Hackathon. It is an app that focuses on the health and well-being of astronauts on missions in space, as well as inventory/ration management.
+RASU is a project worked upon by Team 16 for the Chinguacousy 2021 Wolfhacks Hackathon. It is an app that focuses on the health and well-being of astronauts on missions in space, as well as inventory/ration management. This is a theoretical project, and is meant to serve as a proof-of-concept/prototype. 
 
-The application has a built-in user authentication system with a login/registration page and features a dashboard page which important information such as the health status of astronauts, their daily caloric intake, etc. There is an inventory management page which can be calibrated based on the distance of the trip which displays further information such as the status of rations. Finally, there is a health report page where RASU-AI will take medical symptoms and attempt to diagnose the astronaut. Looking forward to implementing machine learning where the AI can see the result of its diagnosis and uses that data to improve future diagnoses. 
+The application has a built-in user authentication system with a login/registration page and features a dashboard page with important information such as the health status of astronauts, their daily caloric intake, etc. There is an inventory management page which can be calibrated based on the distance of the trip which displays further information such as the status of rations. 
+
+The individual data of astronauts as well of the ship is stored in a MongoDB database.
+
+Finally, we created a mock webpage for health reports where RASU-AI will take medical symptoms and attempt to diagnose the astronaut. We did not implement any machine learning into this - it is simply a concept that we envisioned and would like to complete when we have the knowledge to do so.
 
 
 Roles:
